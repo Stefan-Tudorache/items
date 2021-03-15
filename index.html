@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Items</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-print-color-adjust: exact;
+        -webkit-min-device-pixel-ratio: 0;
+      }
+
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 12px;
+      }
+
+      :root {
+        --primary-color: blue;
+        --secondary-color: skyblue;
+      }
+
+      .box {
+        width: 7cm;
+        height: 9cm;
+        border: solid 4px var(--primary-color);
+        border-radius: 10px;
+        margin: 5px;
+        display: grid;
+        grid-template-rows: 0.7cm 3.5cm 5cm;
+        justify-content: center;
+        text-align: center;
+        background: black;
+      }
+
+      .container .box-text {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        height: 5cm;
+        padding: 0px 4px;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .box-img {
+        width: 6.5cm;
+        margin: auto;
+        height: 150px;
+      }
+
+      .box-armor {
+        background: url("./img/alabastra/Frozen.Greed.png") no-repeat;
+        background-size: contain;
+        background-position: center;
+        width: 6.5cm;
+        margin: auto;
+        height: 150px;
+      }
+
+      .text-primary {
+        color: var(--primary-color);
+      }
+
+      .text-secondary {
+        color: var(--secondary-color);
+      }
+
+      .secondary {
+        border: 4px solid var(--secondary-color);
+      }
+
+      .container {
+        width: 99vw;
+        height: 99vh;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        flex: 25%;
+        justify-content: center;
+        padding-right: 100px;
+      }
+
+      .container h1 {
+        font-size: 18px;
+      }
+
+      .armor2 {
+        padding-top: 20px;
+      }
+
+      .dragon {
+        width: 10cm;
+        height: 10cm;
+        border: solid 2px orangered;
+        margin: 5px;
+        background: url("./img/fire/Balrog\ the\ Ashbringer.jpg") no-repeat
+          center center/cover;
+      }
+
+      .fire {
+        border: 4px solid orangered;
+      }
+
+      .text-fire {
+        color: orangered;
+      }
+
+      .text-fire-secondary {
+        color: gold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <h1 class="text-primary">Frost Spell</h1>
+        <div class="box-img">
+          <img src="./img/alabastra/frost.spell.jpg" alt="" />
+        </div>
+        <div class="box-text">
+          <p class="text-secondary">
+            After you defeat the ice golem a blue symbol appears on the
+            ground.Realizing that is something like an ice spell,you quickly
+            write it down on a piece of paper,before it fades away.
+          </p>
+          <span class="text-primary">
+            Spell has no effect on monsters in ice region.
+          </span>
+          <span class="text-primary">
+            PvP: after you win the fight, you can use the spell to lock the
+            player for 2 turns.
+          </span>
+          <span class="text-primary">
+            Fire region: +4 power to any monster, including the fire dragon.
+          </span>
+        </div>
+      </div>
+
+      <div class="box">
+        <h1 class="text-primary">Frozen Greed</h1>
+        <div class="box-armor">
+          <!-- <img src="./img/alabastra/Frozen.Greed.png" alt=""> -->
+        </div>
+        <div class="box-text">
+          <p class="text-secondary">
+            After defeat the noble adventurers were bound by Seregost in a magic
+            ice so they can be forever obedient and remember the mistake of
+            going against an elder dragon
+          </p>
+          <span class="text-primary armor2">
+            The ice covering the armor is comming directly from the dragon's
+            breath. Charged with magic, will not melt even in front of the
+            hottest flame, thus canceling the effects of the fire land.
+          </span>
+        </div>
+      </div>
+
+      <div class="box">
+        <h1 class="text-primary">Ring of Ecthelion</h1>
+        <div class="box-img">
+          <img src="./img/alabastra/ring.of.ecthelion.JPG" alt="" />
+        </div>
+        <div class="box-text">
+          <p class="text-secondary">
+            Ecthelion was once a frost mage, using the same magic like
+            Seregost.Though not having the same power as the dragon, in his
+            tower of ice, gleaming like a spike of pearl and silver, he did
+            create some fine items.
+          </p>
+          <span class="text-primary">
+            You can only lose this ring by going back from the start, multiple
+            uses.
+          </span>
+          <span class="text-primary">
+            +2 power for every fight with a fire minion, except Balrog the
+            Ashbringer.
+          </span>
+        </div>
+      </div>
+
+      <div class="box">
+        <h1 class="text-primary">Frost Fang</h1>
+        <div class="box-img">
+          <img src="./img/alabastra/Frost.Fang.jpg" alt="" />
+        </div>
+        <div class="box-text">
+          <p class="text-secondary">
+            At the beginning, dragons weren't all bad. They had a lot of
+            goodness inside until they decided to put it away. And so they
+            performed a magic ritual where they poured everything that was good
+            in them in to one item, that they guarded with their life. For
+            Seregost, it was Frost Fang,the doom of fire.
+          </p>
+          <span class="text-primary"> +2 power against PvP </span>
+          <span class="text-primary"> +3 power against any fire minion </span>
+          <span class="text-primary">
+            +5 power against Balrog the Ashbringer
+          </span>
+        </div>
+      </div>
+
+      <!--  ****************************** -->
+
+      <div class="box secondary">
+        <h1 class="text-secondary">Fishing Spear</h1>
+        <div class="box-img">
+          <img src="./img/lake/fishingspear.jpg" alt="" />
+        </div>
+        <div class="box-text">
+          <p class="text-primary spear">
+            You chose to spend some time on the island to look around for
+            something that could help you in your travels. And soon enough you
+            do find a spear. Used mostly for fishing it could come in handy in
+            any fight, after all is pointy and sharp, what could go wrong there.
+          </p>
+          <span class="text-secondary"> +2 Power in PvP. </span>
+          <span class="text-secondary"> +2 Power against any monster. </span>
+        </div>
+      </div>
+      <div class="box secondary">
+        <h1 class="text-secondary">Poseidon Trident</h1>
+        <div class="box-img">
+          <img src="./img/lake/Poseidon.Trident.jpg" alt="" />
+        </div>
+        <div class="box-text">
+          <p class="text-primary trident">
+            Poseidon was thought to be the god of seas and with the Trident in
+            hand, he could control the weather, tame the storms, or destroy
+            those who would oppose him with the power of water.To hold such a
+            mighty weapon in your hand, almost makes you feel unstoppable.
+          </p>
+          <span class="text-secondary"> +2 Power in PvP. </span>
+          <span class="text-secondary"> +3 Power against any monster. </span>
+          <span class="text-secondary trident2">
+            +4 Power against fire land monsters.
+          </span>
+        </div>
+      </div>
+      <div class="box secondary">
+        <h1 class="text-secondary">Tattered Sail</h1>
+        <div class="box-img">
+          <img src="./img/lake/sail.item.jpg" alt="" />
+        </div>
+        <div class="box-text">
+          <p class="text-primary">
+            From the wreckage of those less fortunate treasure hunters you
+            manage to save a tattered sail. Though it has seen better days it
+            seems to be good enough for you to gain some speed in crossing the
+            lake.You take this as a sign of good luck and continue your journey
+            with the wind at your back.
+          </p>
+          <span class="text-secondary">
+            For every roll in Lake of Atlantis you get +2 movement speed.
+          </span>
+        </div>
+      </div>
+      <div class="box secondary">
+        <h1 class="text-secondary">Water Spell</h1>
+        <div class="box-img">
+          <img src="./img/lake/waterspell.png" alt="" />
+        </div>
+        <div class="box-text">
+          <p class="text-primary">
+            Udoras was once one of the greatest elf mage and in his greed for
+            more power he destroyed the entire city he once swore to
+            protect.Tricked and then cursed by the dragons, now he try to atone
+            for his sins by helping you defeat them.
+          </p>
+          <span class="text-secondary">
+            Whenever you lose a fight that force you to return from the start of
+            the game, you can use this Revive Spell to have one more chance at
+            defeating your opponent ( single use ).
+          </span>
+        </div>
+      </div>
+      <div class="dragon"></div>
+      <div class="box fire">
+        <h1 class="text-fire">Phoenix Gift</h1>
+        <div class="box-img">
+          <img src="./img/fire/Phoenix.Gift.png" alt="" />
+        </div>
+        <div class="box-text">
+          <p class="text-fire-secondary">
+            "As long as there is life, a flame will always burn". No matter how
+            dangerous fire is , we will always need it in our lives, so in a
+            way, fire is immortal. This is the power that you now control, the
+            endurance of the Phoenix.
+          </p>
+          <span class="text-fire phoenix">
+            Use this spell after you were defeated to come back and have another
+            chance.
+          </span>
+        </div>
+      </div>
+
+      <div class="box fire">
+        <h1 class="text-fire">Rock Splitter</h1>
+        <div class="box-img">
+          <img src="./img/fire/Rock Splitter.jpg" alt="" />
+        </div>
+        <div class="box-text">
+          <p class="text-fire-secondary">
+            At first a giant rock golem was guarding the entrance in to the fire
+            land, up until a group of brave heroes defeated it. They took out
+            the golems lava heart and brought it to a blacksmith who then use it
+            to create this axe with a blade forever warm and sharp enough to cut
+            even through the hardest stone.
+          </p>
+          <span class="text-fire"> +2 power in PvP. </span>
+          <span class="text-fire"> +4 power against monsters. </span>
+        </div>
+      </div>
+
+      <div class="box fire">
+        <h1 class="text-fire">Will of the Commander</h1>
+        <div class="box-img">
+          <img src="./img/fire/Will.of.the.Comander.jpg" alt="" />
+        </div>
+        <div class="box-text">
+          <p class="text-fire-secondary">
+            Never surrender, never retreat ! This is the law that all commanders
+            follow and no one is above it. Now that you brought peace to the
+            general you can feel his rage,like a bull on fire, unstoppable,
+            relentless.They say you need an army to defeat a dragon, but now,
+            you are the army.
+          </p>
+          <span class="text-fire">
+            Single Use: If you were defeated or locked in place for 3 turns or
+            more, use the comander will to revive or break free.
+          </span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
